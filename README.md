@@ -1,4 +1,4 @@
-## Spring Boot on Kubernetes — Local DevOps Demo
+## Spring Boot on Kubernetes - Local DevOps Demo
 
 **Zero cloud. Full CI/CD pipeline.**
 
@@ -12,6 +12,8 @@ helm install hello ./hello-chart
 ### 3. Access
 kubectl port-forward svc/hello 8080:80
 
+### Live App
 ![Live App](https://github.com/lanehale/spring-hello-devops/blob/main/screenshots/browser.png)
 
+### Pods
 ![Pods](https://github.com/lanehale/spring-hello-devops/blob/main/screenshots/pods.png)
