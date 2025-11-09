@@ -13,5 +13,6 @@ helm install hello ./hello-chart
 # 3. Access
 kubectl port-forward svc/hello 8080:80
 
-![Live App](main/screenshots/browser.png?raw=true)
-![Pods](main/screenshots/pods.png)
+![Live App](https://github.com/lanehale/spring-hello-devops/blob/main/screenshots/browser.png)
+
+![Pods](https://github.com/lanehale/spring-hello-devops/blob/main/screenshots/pods.png)
