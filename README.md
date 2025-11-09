@@ -13,5 +13,5 @@ helm install hello ./hello-chart
 # 3. Access
 kubectl port-forward svc/hello 8080:80
 
-<img src="screenshots/browser.png" alt="Live App">
-<img src="screenshots/pods.png" alt="Pods">
+![Live App](screenshots/browser.png)
+![Pods](screenshots/pods.png)
