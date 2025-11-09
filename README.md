@@ -1,7 +1,17 @@
-# Spring Boot DevOps Demo
+# Spring Boot on Kubernetes — Local DevOps Demo
 
-**Full CI/CD pipeline — zero cloud cost.**
+**Zero cloud. Full CI/CD pipeline.**
 
 ```bash
-curl $(minikube service hello-hello --url --format '{{.}}')
-# → "Hello from Spring Boot on Kubernetes!"
+# 1. Build & load
+docker build -t spring-hello:v1 .
+minikube image load spring-hello:v1
+
+# 2. Deploy
+helm install hello ./hello-chart
+
+# 3. Access
+kubectl port-forward svc/hello 8080:80
+
+<img src="screenshots/browser.png" alt="Live App">
+<img src="screenshots/pods.png" alt="Pods">
