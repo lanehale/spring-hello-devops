@@ -2,7 +2,6 @@
 
 **Zero cloud. Full CI/CD pipeline.**
 
-```bash
 # 1. Build & load
 docker build -t spring-hello:v1 .
 minikube image load spring-hello:v1
