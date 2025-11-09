@@ -1,0 +1,28 @@
+name: Deploy to Minikube
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Start Minikube
+        uses: medyagh/setup-minikube@master
+
+      - name: Build Docker image
+        run: |
+          docker build -t spring-hello:${{ github.sha }} .
+
+      - name: Load image to Minikube
+        run: |
+          minikube image load spring-hello:${{ github.sha }}
+
+      - name: Deploy with Helm
+        run: |
+          helm upgrade --install hello ./hello-chart \
+            --set image.tag=${{ github.sha }}
