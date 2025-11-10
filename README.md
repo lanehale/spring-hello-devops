@@ -1,3 +1,5 @@
+![DevOps CI](https://github.com/lanehale/spring-hello-devops/actions/workflows/deploy.yml/badge.svg)
+
 ## Spring Boot on Kubernetes - Local DevOps Demo
 
 **Zero cloud. Full CI/CD pipeline.**
