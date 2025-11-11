@@ -1,4 +1,4 @@
-![DevOps CI](https://github.com/lanehale/spring-hello-devops/actions/workflows/deploy.yml/badge.svg)
+[![DevOps Pipeline](https://github.com/lanehale/spring-hello-devops/actions/workflows/deploy.yml/badge.svg)](https://github.com/lanehale/spring-hello-devops/actions)
 
 ## Spring Boot on Kubernetes - Local DevOps Demo
 
